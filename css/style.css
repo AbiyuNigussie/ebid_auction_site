@@ -93,3 +93,70 @@ nav {
 
 
 }
+.second-row-header {
+    display: flex;
+    background-color: goldenrod;
+    width: 100%;
+    justify-content: space-between;
+    align-items: stretch;
+}
+
+.second-row-header .right-section {
+    background-color: aqua;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin: 0 30px 0 0;
+
+    /* margin: 0 60px 0 0; */
+}
+.second-row-header .left-section {
+    background-color: blueviolet;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    height: 100%;
+    gap: 10px;
+    margin: 0 0 0 30px;
+}
+.login-container {
+    padding: 15px 35px;
+    background-color: blue;
+
+}
+.login-url {
+    text-decoration: none;
+    color: #666;
+}
+.search-container {
+    display: flex;
+    gap: 5px;
+    height: 100%;
+}
+.search-bar {
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    width: 440px;
+    padding: 5px 10px;
+    
+}
+.go-btn {
+    padding: 8px 15px;
+    border: none;
+    border-radius: 3px;
+    background-color: crimson;
+    font-weight: bold;
+    color: white;
+}
+
+.para-link-container a {
+    font-family: "Helvetica Neue", Rubik, Helvetica, Arial, sans-serif;
+    font-size: 13px;
+    color: black;
+    text-decoration: none;
+    word-spacing: 1px;
+}
+.para-link-container a:hover {
+    color: #1265a8;
+}       
