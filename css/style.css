@@ -2,10 +2,15 @@
     margin: 0;
     padding: 0;
 }
+html {
+    height: 100%;
+}
 
 body {
-    height: 100vh;
-    margin-bottom: 300px;
+    height: 100%;
+    font-family: "Helvetica Neue", Rubik, Helvetica, Arial, sans-serif;
+
+    
 }
 
 header {
@@ -15,7 +20,7 @@ header {
     align-items: center;
     /* height: 60px; */
     width: 100%;
-    background-color: grey;
+    /* background-color: grey; */
 }
 
 .first-row-header {
@@ -25,14 +30,12 @@ header {
 }
 .logo-container {
     margin: 0 60px;
-    background-color: yellow;
 }
 
 nav {
     display: flex;
     justify-content: right;
     align-items: center;
-    background-color: green;
     margin: 0 45px;
     gap:40px;
     width:65%;
@@ -45,7 +48,6 @@ nav {
     justify-content: space-between;
     align-items: center;
     gap:30px;
-    background-color: aqua;
 
 }
 
@@ -63,11 +65,8 @@ nav {
 }
 
 .ebid-btns-cont {
-    background-color: burlywood;
-    /* margin: 0 40px; */
     display: flex;
     justify-content: right;
-    /* flex-grow: 1; */
     gap: 40px;
 
 }
@@ -78,31 +77,29 @@ nav {
     font-weight: bold;
     font-family: Helvetica;
     font-size: 13px;
-    padding: 8px 18px;
+    padding: 9px 20px;
 
 
 }
 .shop-on-ebid-btn {
-    background-color: red;
+    background-color: #cc2200;
     border-radius: 3px;
 }
 
 .sell-on-ebid-btn {
-    background-color: blue;
+    background-color: #1265a8;
     border-radius: 3px;
 
 
 }
 .second-row-header {
     display: flex;
-    background-color: goldenrod;
     width: 100%;
     justify-content: space-between;
     align-items: stretch;
 }
 
 .second-row-header .right-section {
-    background-color: aqua;
     display: flex;
     justify-content: left;
     align-items: center;
@@ -111,7 +108,6 @@ nav {
     /* margin: 0 60px 0 0; */
 }
 .second-row-header .left-section {
-    background-color: blueviolet;
     display: flex;
     justify-content: left;
     align-items: center;
@@ -121,11 +117,15 @@ nav {
 }
 .login-container {
     padding: 15px 35px;
-    background-color: blue;
 
 }
+.login-container:hover {
+    background-color: #EEE;
+}
 .login-url {
+    font-size: 13px;
     text-decoration: none;
+    font-weight: 400;
     color: #666;
 }
 .search-container {
@@ -135,7 +135,7 @@ nav {
 }
 .search-bar {
     outline: none;
-    border: none;
+    border: 1px solid #ccc;
     border-radius: 5px;
     width: 440px;
     padding: 5px 10px;
@@ -155,8 +155,156 @@ nav {
     font-size: 13px;
     color: black;
     text-decoration: none;
-    word-spacing: 1px;
+    word-spacing: 2px;
 }
 .para-link-container a:hover {
     color: #1265a8;
-}       
+}
+
+main {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    background-color: #f4f4f4;
+    gap: 16px;
+    
+}
+
+.over-layout {
+    position: relative;
+    width: 100%;
+    height: 30%;
+
+}
+
+.ads-container {
+    height: 100%;
+    background-color: burlywood;
+
+}
+
+.category-container {
+    position: absolute;
+    top: 0;
+    left: 30px;
+    background-color: #ececec;
+    width: 261px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 2px 3px rgba(0,0,0,.175);
+    /* padding: 15px 0 0 20px; */
+}
+.category-wrapper {
+    margin: 18px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.category-intro-para {
+    color: #444;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+
+.browse-num {
+    color:#1265a8;
+    cursor: pointer;
+}
+
+.category-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.category-item {
+    color: black;
+    font-size: 12px;
+    text-decoration: none;
+}
+
+.category-item:hover {
+    color: #1265a8;
+}
+
+.empty-aside {
+    background-color: green;
+    width: 19.2%;
+}
+.all-listings-container {
+    background-color: yellow;
+    width: 63%;
+}
+
+.right-aside {
+    background-color: blue;
+    width:18.5%;
+}
+
+.three-cats-cont {
+    display: flex;
+    flex-direction: column;
+}
+
+.cat-desc {
+    display: flex;
+    gap:125px;
+    margin-left: 75px;
+    text-align: center;
+    font-family: Rubik, sans-serif;
+    font-size: 13px;
+    padding: 20px 0;
+
+}
+.cat-one-cont {
+    padding: 20px 20px;
+    display: flex;
+    flex-grow: 1;
+    background-color: goldenrod;
+    gap: 30px;
+
+}
+
+.cat-one-cont div {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    font-family:Rubik, sans-serif;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 500;
+    color: #222222;
+}
+.cat-one-cont div img {
+    border-radius: 50%;
+    display: flex;
+}
+
+
+
+.cat-two-cont {
+    flex-grow: 1;
+    background-color: aliceblue;
+    
+}
+.cat-three-cont {
+    flex-grow: 1;
+    background-color: #1265a8;
+    
+}
+
+.first-cat-desc {
+    text-align: center;
+}
+
+.frontpage-featured-listings-cont {
+    height: 200px;
+    background-color: aqua;
+    padding: 15px 30px;
+}
+
+.frontpage-featured-listings-cont p {
+    font-weight: bold;
+    color:#444444
+
+}
