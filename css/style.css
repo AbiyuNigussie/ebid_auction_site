@@ -298,13 +298,56 @@ main {
 }
 
 .frontpage-featured-listings-cont {
-    height: 200px;
+    /* height: 200px; */
     background-color: aqua;
     padding: 15px 30px;
 }
 
-.frontpage-featured-listings-cont p {
+.frontpage-featured-listings-cont  p {
     font-weight: bold;
     color:#444444
 
+}
+
+.listing-slider-cont {
+    margin-top: 20px;
+    display: flex;
+    gap: 20px;
+    background-color: blue;
+    font-family: "Helvetica Neue", Rubik, Helvetica, Arial, sans-serif;
+}
+
+.listing-slider-cont div {
+    background-color: green;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border-radius: 7px;
+
+}
+
+.listing-slider-cont div .img-cont {
+    /* height: 150px;
+    width: 125px; */
+
+}
+.listing-slider-cont div p {
+    
+    font-size: 13px;
+    font-weight: 400;
+}
+
+.listing-slider-cont div .price-desc {
+    display: flex;
+    justify-content: right;
+    padding: 0;
+    margin-top: 20px;
+    
+}
+
+.listing-slider-cont div .price-desc p {
+    font-weight: 600;
+    font-size: 18px;
+    text-align: right;
 }
