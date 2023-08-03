@@ -163,7 +163,6 @@ nav {
 
 main {
     display: flex;
-    height: 100%;
     width: 100%;
     background-color: #f4f4f4;
     gap: 16px;
@@ -228,17 +227,22 @@ main {
 }
 
 .empty-aside {
-    background-color: green;
+    background-color: #f4f4f4;
     width: 19.2%;
 }
 .all-listings-container {
-    background-color: yellow;
+    background-color: #f4f4f4;
     width: 63%;
+    margin-left: 10px;
 }
 
 .right-aside {
     background-color: blue;
     width:18.5%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 40px;
 }
 
 .three-cats-cont {
@@ -257,10 +261,10 @@ main {
 
 }
 .cat-one-cont {
-    padding: 20px 20px;
+    padding: 20px 20px 0 20px;
     display: flex;
     flex-grow: 1;
-    background-color: goldenrod;
+    /* background-color: goldenrod; */
     gap: 30px;
 
 }
@@ -297,13 +301,17 @@ main {
     text-align: center;
 }
 
-.frontpage-featured-listings-cont {
+.listings-cont {
     /* height: 200px; */
-    background-color: aqua;
+    margin-top: 40px;
+    background-color: #ffffff;
     padding: 15px 30px;
+    border: 1px solid lightgray; 
+    border-radius: 3px;
+    box-shadow: 0 1px 4px 0 rgba(0,0,0,0.1);;
 }
 
-.frontpage-featured-listings-cont  p {
+.listings-cont  p {
     font-weight: bold;
     color:#444444
 
@@ -313,17 +321,22 @@ main {
     margin-top: 20px;
     display: flex;
     gap: 20px;
-    background-color: blue;
+    /* background-color: blue; */
     font-family: "Helvetica Neue", Rubik, Helvetica, Arial, sans-serif;
 }
 
-.listing-slider-cont div {
-    background-color: green;
+.listing-slider-cont  div {
+    /* background-color: green; */
     padding: 10px;
     display: flex;
     flex-direction: column;
     gap: 10px;
     border-radius: 7px;
+
+}
+
+.listing-slider-cont > div {
+    border: 1px solid lightgrey;
 
 }
 
@@ -350,4 +363,119 @@ main {
     font-weight: 600;
     font-size: 18px;
     text-align: right;
+}
+
+.right-aside .first-row {
+    margin-top: 20px;
+    font-family: Rubik, sans-serif;
+    font-size: 13px;
+    background-color: green;
+}
+
+.right-aside .first-row .count-num  {
+    margin-left: 60px;
+    font-weight: 600;
+}
+
+.right-aside .second-row {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.right-aside .second-row button {
+    padding: 10px 20px;
+    color: white;
+    font-weight: 600;
+    font-family: "Helvetica Neue", Rubik, Helvetica, Arial, sans-serif;
+    font-size: 13px;
+    border:none;
+    border-radius: 3px;
+    width: fit-content;
+
+}
+
+.right-aside .second-row .red-btn {
+    background-color: #cc0416;
+}
+.right-aside .second-row .blue-btn {
+    background-color: #0084c1;
+    margin-left: 10px;
+}
+
+.right-aside .third-row {
+    background-color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    padding: 15px 15px;
+    width: 75%;
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    align-items:center;
+}
+
+.right-aside .third-row .a {
+    display: flex;
+    justify-content: right;
+    padding: 0 25px 0 0;
+}
+
+.right-aside .third-row .a .zero-fee-cont {
+    width: 70%;
+}
+
+.right-aside .third-row .a .zero-fee-cont .zero-fee {
+    text-align: right;
+    font-size: 24px;
+    font-family: "Helvetica Neue", Rubik, Helvetica, Arial, sans-serif;
+    font-weight: 600;
+    color: #cc2200;
+}
+
+.right-aside .third-row .b {
+    text-align: center;
+    font-family: "Helvetica Neue", Rubik, Helvetica, Arial, sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 27px;
+    padding: 0 20px 0 0;
+}
+
+.right-aside .third-row .b .pr {
+    color: #cc2200;
+}
+
+.right-aside .third-row .c {
+    font-size: 12px;
+    line-height: 22px;
+
+}
+
+.right-aside .third-row .d {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    /* width: 100%; */
+    text-align: center;
+    align-items: center;
+     
+}
+
+.right-aside .third-row .d button {
+    
+    width: fit-content;
+    background-color: #cc2200;
+    padding: 7px 15px;
+    border:none;
+    border-radius: 3px;
+    color: white;
+    font-size: 11px;
+    font-weight: 600;
+}
+.right-aside .third-row .d p {
+    
+    font-size: 11px;
 }
