@@ -835,6 +835,7 @@ main .register-cont .r-second-row .registration-form-cont .second-row .item-cont
     cursor: not-allowed;
     background-color: #eee;
     font-family: "Helvetica Neue", Rubik, Helvetica, Arial, sans-serif;
+    
 }
 main .register-cont .r-second-row .registration-form-cont .second-row .item-cont .y div {
     display: flex;
@@ -890,4 +891,132 @@ main .register-cont .r-second-row .registration-form-cont .third-row div button 
 
 main .register-cont .r-second-row .registration-form-cont .third-row div button:hover {
     opacity: 0.8;
+}
+
+main .help-cont {
+    width: 100%;
+    /* height: 500px; */
+    display: flex;
+    flex-direction: column;
+}
+
+main .help-cont .first-row {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 30px;
+}
+
+main .help-cont .first-row h1 {
+    font-family: Rubik, sans-serif;
+    font-size: 18px;
+}
+main .help-cont .first-row a {
+    text-decoration: none;
+    color: #444444;
+    font-size: 13px;
+}
+
+main .help-cont .first-row a:hover {
+    color: #0084c1;
+}
+
+main .help-cont .second-row {
+    display: flex;
+}
+main .help-cont .second-row .cell-one {
+
+}
+
+main .help-cont .second-row .cell-one .help-link-cont {
+    color: #444444;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    padding: 0 15px 50px 15px;
+    gap: 20px;
+    height: fit-content;
+    margin: 15px 0 0 40px;
+}
+
+main .help-cont .second-row .cell-one .help-link-cont .main-help-index {
+    color: black;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+main .help-cont .second-row .cell-one .help-link-cont a {
+    color: black;
+    font-size: 12px;
+    line-height: 18px;
+}
+main .help-cont .second-row .cell-one .help-link-cont div {
+    display: flex;
+    flex-direction: column;
+}
+main .help-cont .second-row .cell-two {
+    color: #444444;
+    width: 65%;
+}
+
+main .help-cont .second-row .cell-two .main-title {
+    line-height: 36px;
+    border-bottom: 2px solid #1265a8;
+    padding: 10px;
+}
+
+main .help-cont .second-row .cell-two .row-one {
+    margin-bottom: 100px;
+}
+
+main .help-cont .second-row .cell-two .row-one ol {
+    margin: 30px 0 0 45px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+main .help-cont .second-row .cell-two .row-one ol a {
+    color: #444444;
+    font-weight: 600;
+    text-decoration: none;
+    font-size: 15px;
+}
+main .help-cont .second-row .cell-two .row-one ol a:hover {
+    color: #1265a8;
+}
+
+main .help-cont .second-row .cell-two .row-two {
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    margin-bottom: 75px;
+} 
+
+main .help-cont .second-row .cell-two .row-two .quest-cont {
+    border: 1px solid #e3e3e3;
+    border-radius: 7px;
+    background-color: #fff;
+    padding: 25px 20px;
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    
+} 
+
+main .help-cont .second-row .cell-two .row-two .quest-cont .para-title {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 36px;
+} 
+main .help-cont .second-row .cell-two .row-two .quest-cont p {
+    font-family: "Helvetica Neue", Rubik, Helvetica, Arial, sans-serif;
+    font-size: 13px;
+    line-height: 23px;
+    color: #222222;
+} 
+
+main .help-cont .second-row .cell-two .row-two .quest-cont p a {
+    color: #444444;
 }
